@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quizappstyle.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=timer"
+    />
+    <title>Quizapp</title>
+  </head>
+  <body>
+    <main>
+      <!-- config contianer -->
+      <div class="config_container">
+        <h2>Quiz App</h2>
+        <div class="category">
+          <p class="category_title">select category:</p>
+          <div class="category_options">
+            <button class="category_option active">Programming</button>
+            <button class="category_option">Geography</button>
+            <button class="category_option">Mathematics</button>
+            <button class="category_option">Entertainment</button>
+          </div>
+        </div>
+        <div class="numberOfQuestions">
+          <p class="option_title">select number of questions:</p>
+          <div class="question_options">
+            <button class="question_option active">5</button>
+            <button class="question_option">10</button>
+            <button class="question_option">15</button>
+            <button class="question_option">20</button>
+            <button class="question_option">25</button>
+          </div>
+        </div>
+
+        <button class="start_quiz_btn">Start Quiz</button>
+      </div>
+
+      <!-- quiz container -->
+      <div class="quiz_container">
+        <header class="quiz_header">
+          <h2>Quiz Application</h2>
+          <div class="quiz_timer">
+            <span class="material-symbols-outlined timer_icon"> timer </span>
+            <p class="time_duration">15s</p>
+            <audio class="clock_audio" src="./count-down-clock.wav" preload="auto" type="audio/wav"></audio>
+          </div>
+        </header>
+
+        <div class="quiz_content">
+          <h1 class="quiz_question"></h1>
+          <ul class="answer_options"></ul>
+        </div>
+
+        <footer class="quiz_footer">
+          <p class="question_status"></p>
+          <button class="next_question_btn">Next</button>
+        </footer>
+      </div>
+
+      <!-- result contianer -->
+      <div class="result_container">
+        <img
+          class="result_img"
+          src="./party-popper-congratulation.png"
+          alt="congrartulation-icon"
+        />
+        <h2 class="result_title"></h2>
+        <p class="result_message">
+          
+        </p>
+        <button class="try_again_btn">Try again</button>
+      </div>
+    </main>
+
+    <script src="quizappquestions.js"></script>
+    <script src="quizappscript.js"></script>
+  </body>
+</html>
